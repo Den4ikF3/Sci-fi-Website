@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNSC // PRIORITY TRANSMISSION</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="fallback-bg"></div>
+
+    <div class="audio-enable">
+        <p>INCOMING TRANSMISSION<br />DECRYPTION REQUIRED</p>
+        <button class="enable-button" id="enableBtn">ESTABLISH UPLINK</button>
+    </div>
+
+    <div class="preloader" id="preloader">
+        <span id="counter">[000]</span>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <p class="text-element description">
+        UNSC OFFICE OF NAVAL INTELLIGENCE<br>
+        SECTION THREE // CLASSIFIED MATERIALS<br>
+        EYES ONLY.
+    </p>
+
+    <nav class="text-element nav-links">
+        <a href="#">_SPARTAN_II_LOGS</a>
+        <a href="#">_MJOLNIR_BLUEPRINTS</a>
+        <a href="#">_CORTANA_FRAGMENTS</a>
+        <a href="#">_FORERUNNER_GLYPHS</a>
+    </nav>
+
+    <div class="text-element footer">
+        <p>Err: [SIGNAL WEAK]<br />
+        PROTOCOL: WINTER CONTINGENCY<br />
+        <span style="opacity: 0.7; font-size: 0.6rem;">PRESS 'H' TO TOGGLE VISOR HUD</span>
+        </p>
+    </div>
+
+    
+
+    <div class="text-element central-header">
+        <div class="sub-header">UNITED NATIONS SPACE COMMAND</div>
+        <div class="main-title">ARCHIVE // 04</div>
+        <div class="decorative-bar"></div>
+    </div>
+
+    
+
+    <div class="text-element button-container">
+        <button class="halo-btn primary-btn">
+            <span class="btn-text">INITIATE PROTOCOL</span>
+            <span class="btn-decor"></span>
+        </button>
+        
+        <button class="halo-btn secondary-btn">
+            <span class="btn-text">ABORT SEQUENCE</span>
+            <span class="btn-decor"></span>
+        </button>
+    </div>
+
+    <audio id="startClickSound" preload="auto"><source src="https://assets.codepen.io/7558/preloader-2s-001.mp3"></audio>
+    <audio id="preloaderSound" preload="auto"><source src="https://assets.codepen.io/7558/preloader-3s-002.mp3"></audio>
+    <audio id="backgroundMusic" loop preload="auto"><source src="https://assets.codepen.io/7558/cinematic-02.mp3"></audio>
+
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js'></script>
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
